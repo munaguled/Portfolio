@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ascend Prep: Your Path to an Apprenticeship</title>
+  <meta name="description" content="Ascend Prep offers a proven mentorship program to help you land your dream degree apprenticeship. Get paired with experienced mentors and follow our roadmap to success.">
+  <!-- Use Tailwind CSS for a modern, responsive design -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #0f172a;
+      color: #f8fafc;
+    }
+    .container-section {
+      padding: 4rem 1rem;
+    }
+    .card {
+      background-color: #1a202c;
+      border-radius: 1rem;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    }
+    .neon-button {
+      background-color: #34d399;
+      color: #0e1117;
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+      font-weight: 700;
+    }
+    .neon-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 15px rgba(52, 211, 153, 0.6);
+    }
+    .neon-text {
+      color: #34d399;
+    }
+    .applicant-tab-container {
+      display: flex;
+      border-radius: 9999px;
+      overflow: hidden;
+      background-color: #2d3748;
+    }
+    .applicant-tab {
+      flex-grow: 1;
+      text-align: center;
+      padding: 0.75rem 1.5rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: 700;
+    }
+    .applicant-tab.active {
+      background-color: #34d399;
+      color: #0e1117;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header class="text-white container-section py-20 md:py-32">
+    <div class="max-w-6xl mx-auto text-center px-4">
+      <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4 leading-tight neon-text">
+        THE SMARTEST PATH TO YOUR DREAM APPRENTICESHIP
+      </h1>
+      <a href="#register-form" class="neon-button font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 mt-6 inline-block">
+        Register Below
+      </a>
+      <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mt-6">
+        A proven system to getting your apprenticeship. Sign up to be paired with one of our experienced degree apprenticeship mentors today.
+      </p>
+    </div>
+  </header>
+
+  <!-- Our Purpose Section -->
+  <main class="container-section text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Purpose</h2>
+      <p class="text-lg md:text-xl text-gray-400 mb-8">
+        We are a dedicated mentoring programme with a team of experienced degree apprentices ready to meet with you and guide you through the application process. Our student mentors help you identify your weaknesses—why are you being rejected? What are you doing wrong? We tackle these pain points head-on to help you stand out from thousands of other applicants.
+      </p>
+      <p class="text-lg md:text-xl font-bold neon-text">
+        Join us today for a guaranteed offer from your dream apprenticeship.
+      </p>
+    </div>
+  </main>
+
+  <!-- Statistics Section -->
+  <section class="container-section bg-gray-900 text-center">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">
+        Why Mentorship Matters: Insights From Students
+      </h2>
+      <p class="text-xl text-gray-400 mb-10">
+        These insights are based on a survey of 40 sixth form students who were preparing to apply for apprenticeships.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-8 card shadow-lg">
+          <h3 class="text-5xl font-extrabold neon-text mb-2">94%</h3>
+          <p class="text-gray-400">
+            said they are more likely to progress further or secure an offer if they have a mentor in their chosen industry.
+          </p>
+        </div>
+        <div class="p-8 card shadow-lg">
+          <h3 class="text-5xl font-extrabold neon-text mb-2">85%</h3>
+          <p class="text-gray-400">
+            reported struggling to articulate their experiences using the STAR structure in a compelling way.
+          </p>
+        </div>
+        <div class="p-8 card shadow-lg">
+          <h3 class="text-5xl font-extrabold neon-text mb-2">75%</h3>
+          <p class="text-gray-400">
+            had never been in a corporate environment and felt unprepared for interviews or assessment centres.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Applicant Types Section -->
+  <section class="container-section text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">What Kind of Applicant Are You?</h2>
+      <div class="flex justify-center mb-8">
+        <div class="applicant-tab-container max-w-lg">
+          <button id="intentional-tab" class="applicant-tab active">Intentional Applicant</button>
+          <button id="reactive-tab" class="applicant-tab">Reactive Applicant</button>
+        </div>
+      </div>
+      
+      <div id="intentional-content" class="p-8 card text-left shadow-lg">
+        <img src="https://seeyouthbycellc.co.za/wp-content/uploads/2022/09/Strategies-for-tackling-homework.png" alt="A focused person looking at a computer with data trackers, showing an organized approach to applications." class="rounded-lg mb-4 mx-auto md:w-1/2">
+        <p class="text-gray-300 leading-relaxed">
+          You're a strategist. You know that landing your dream apprenticeship isn't about luck—it's about a targeted, prepared approach. You understand that every application is an opportunity to showcase your unique skills and passion. Instead of feeling overwhelmed, you take control. You tailor your CV, prepare for every interview, and have a clear, intentional story to tell. You're ready to stand out from the crowd.
+        </p>
+      </div>
+      <div id="reactive-content" class="p-8 card text-left hidden shadow-lg">
+        <img src="https://www.boredpanda.com/blog/wp-content/uploads/2024/04/applicant-end-interview-after-hr-stunt-1.jpg" alt="A person looking frustrated and crying at a computer, showing the emotional toll of a disorganized application process." class="rounded-lg mb-4 mx-auto md:w-1/2">
+        <p class="text-gray-300 leading-relaxed">
+          You're submitting generic applications and hoping for the best. You're letting opportunities pass you by, not because you aren't talented, but because you're lost in a sea of confusion. You've been rejected, and you don't know why. The process feels overwhelming and emotional. Don't let another application season go by feeling defeated. It's time to stop the cycle of frustration and get the guidance you need.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem (What Schools Do Wrong) Section -->
+  <section class="container-section text-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">What The Traditional Approach Misses</h2>
+      <p class="text-lg md:text-xl text-gray-400 leading-relaxed mb-6">
+        Most educational institutions focus on university applicants, coaching them on how to sell their academic abilities to universities. Why can't they do the same for apprentice applicants?
+      </p>
+      <p class="text-lg md:text-xl text-gray-400 leading-relaxed">
+        The reasons are twofold: a lack of specialized knowledge on the apprenticeship application process, and a disproportionate focus on the larger pool of university applicants.
+      </p>
+    </div>
+  </section>
+
+  <!-- Solution (What We Do Right) Section -->
+  <section class="container-section text-gray-800 bg-gray-900">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 neon-text">The Ascend Apprenticeship Roadmap</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+        <div class="p-8 card shadow-lg">
+          <div class="bg-blue-800 text-blue-300 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-3xl font-bold">1</div>
+          <h3 class="text-xl font-bold mb-2 text-white">CV & Cover Letter Mastery</h3>
+          <p class="text-gray-400">Our mentors will review your CV and analyze how to tailor your experiences and wording to display the exact skills needed for each role you apply for.</p>
+        </div>
+        <div class="p-8 card shadow-lg">
+          <div class="bg-indigo-800 text-indigo-300 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-3xl font-bold">2</div>
+          <h3 class="text-xl font-bold mb-2 text-white">Online Assessment Preparation</h3>
+          <p class="text-gray-400">We'll guide you through practice assessments for numerical, verbal, and logical reasoning tests, giving you vital tips to ace this critical stage.</p>
+        </div>
+        <div class="p-8 card shadow-lg">
+          <div class="bg-purple-800 text-purple-300 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-3xl font-bold">3</div>
+          <h3 class="text-xl font-bold mb-2 text-white">Video Interview Coaching</h3>
+          <p class="text-gray-400">Our mentors will help you rehearse your answers, ensuring you sound natural, confident, concise, and passionate while also improving your on-camera presence.</p>
+        </div>
+        <div class="p-8 card shadow-lg">
+          <div class="bg-teal-800 text-teal-300 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-3xl font-bold">4</div>
+          <h3 class="text-xl font-bold mb-2 text-white">Mock Interviews & Assessment Centers</h3>
+          <p class="text-gray-400">Practice makes perfect. We'll provide mock interviews and assessment centers to give you the confidence you need to secure a guaranteed offer from your dream apprenticeship.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final Call to Action Section -->
+  <section id="register-form" class="container-section text-center">
+    <div class="max-w-4xl mx-auto px-4 card shadow-lg p-12 md:p-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4 neon-text">Ready to Launch Your Career?</h2>
+      <p class="text-gray-300 text-lg mb-8">
+        Join our community and get the mentorship you need to land your dream apprenticeship.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+        <!-- Student Registration Google Form -->
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdB_hohNzEmPsCVIMGkxztmeP-_VJBBjfOzsJ3LZgZobjNmUA/viewform?embedded=true" target="_blank" class="neon-button font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+          Be Paired With a Mentor
+        </a>
+        <!-- Mentor Registration Google Form -->
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4oFZPuT4MLKZncyz98WcTFcetoaYuMbpXab_w_A4KTtZXPw/viewform?embedded=true" target="_blank" class="bg-gray-700 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+          Become a Mentor
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="text-gray-400 py-8 px-4 text-center">
+    <div class="max-w-6xl mx-auto">
+      <p>&copy; 2025 Ascend Prep. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const intentionalTab = document.getElementById('intentional-tab');
+      const reactiveTab = document.getElementById('reactive-tab');
+      const intentionalContent = document.getElementById('intentional-content');
+      const reactiveContent = document.getElementById('reactive-content');
+
+      intentionalTab.addEventListener('click', () => {
+        intentionalTab.classList.add('active');
+        reactiveTab.classList.remove('active');
+        intentionalContent.classList.remove('hidden');
+        reactiveContent.classList.add('hidden');
+      });
+
+      reactiveTab.addEventListener('click', () => {
+        reactiveTab.classList.add('active');
+        intentionalTab.classList.remove('active');
+        reactiveContent.classList.remove('hidden');
+        intentionalContent.classList.add('hidden');
+      });
+    });
+  </script>
+
+</body>
+</html>
